@@ -1,2 +1,1 @@
-# Jogo-UFRB-Sustentabilidade 
-ok
+# UFRB Sustenta
