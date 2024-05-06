@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpuum1mbwruj6"]
+
+[ext_resource type="Script" path="res://models/obj_cenario/Label3D.gd" id="1_uft6d"]
+
+[node name="label" type="Node3D"]
+
+[node name="Label3D" type="Label3D" parent="."]
+text = "Saude: 100
+R$ 0.00
+"
+script = ExtResource("1_uft6d")

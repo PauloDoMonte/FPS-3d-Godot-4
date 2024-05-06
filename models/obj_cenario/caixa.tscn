@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://3mlysujcobfi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rki7s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x41nf"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7ihnh"]
+material = SubResource("StandardMaterial3D_x41nf")
+
+[node name="Caixa" type="RigidBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_rki7s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("BoxMesh_7ihnh")

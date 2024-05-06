@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkqhdor8015l8"]
+
+[ext_resource type="PackedScene" uid="uid://bd32ijer3jyd1" path="res://models/obj_cenario/chao.tscn" id="1_ne4f4"]
+[ext_resource type="PackedScene" uid="uid://3mlysujcobfi" path="res://models/obj_cenario/caixa.tscn" id="2_hm0uq"]
+[ext_resource type="PackedScene" uid="uid://d6imfbdag07f" path="res://characters/player/player.tscn" id="3_hfayo"]
+[ext_resource type="PackedScene" uid="uid://cpuum1mbwruj6" path="res://models/obj_cenario/label.tscn" id="4_cu46d"]
+
+[node name="inicial" type="Node3D"]
+
+[node name="chao" parent="." instance=ExtResource("1_ne4f4")]
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="Caixa" parent="Node3D" instance=ExtResource("2_hm0uq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 5.77017, 2)
+
+[node name="Caixa2" parent="Node3D" instance=ExtResource("2_hm0uq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+
+[node name="Caixa11" parent="Node3D" instance=ExtResource("2_hm0uq")]
+transform = Transform3D(1, 0, 0, 0, 0.1, 0, 0, 0, 1, 1, 0, 2)
+
+[node name="Caixa5" parent="Node3D" instance=ExtResource("2_hm0uq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
+
+[node name="Caixa6" parent="Node3D" instance=ExtResource("2_hm0uq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 2)
+
+[node name="Caixa9" parent="Node3D" instance=ExtResource("2_hm0uq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 2)
+
+[node name="Caixa7" parent="Node3D" instance=ExtResource("2_hm0uq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, 2)
+
+[node name="Caixa8" parent="Node3D" instance=ExtResource("2_hm0uq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+
+[node name="Caixa10" parent="Node3D" instance=ExtResource("2_hm0uq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+
+[node name="Caixa3" parent="Node3D" instance=ExtResource("2_hm0uq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 1.35087)
+
+[node name="Caixa4" parent="Node3D" instance=ExtResource("2_hm0uq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.99755, 0.107137)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 5, 12)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D"]
+light_energy = 10.0
+
+[node name="player" parent="." instance=ExtResource("3_hfayo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.33332, 2.14204, -0.971499)
+
+[node name="label" parent="." instance=ExtResource("4_cu46d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 5, 6)
