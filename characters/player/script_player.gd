@@ -6,6 +6,8 @@ extends CharacterBody3D
 @onready var crounching_collision_shape = $crounching_collision_shape
 @onready var ray_cast_3d = $RayCast3D
 
+@onready var paused = $"../ui/pausemenu/pause_menu"
+
 # Variaveis para controlar velocidade do movimento do player
 var speed = 5.0
 const walking_speed = 5.0
@@ -28,7 +30,7 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _input(event):
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion and paused.visible == false:
 		rotate_y(-deg_to_rad(event.relative.x * mouse_sensibility))
 		head.rotate_x(-deg_to_rad(event.relative.y * mouse_sensibility))
 		head.rotation.x = clamp(head.rotation.x,deg_to_rad(-89),deg_to_rad(89))

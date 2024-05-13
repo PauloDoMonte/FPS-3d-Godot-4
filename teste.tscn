@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cy1tjl8ygpoal"]
+[gd_scene load_steps=16 format=3 uid="uid://pvuqmfjtvg3t"]
 
 [ext_resource type="Texture2D" uid="uid://btl0y7kkbv365" path="res://models/terrain/assets/Ground068_1K-JPG_Color.jpg" id="1_smf6l"]
 [ext_resource type="Script" path="res://levels/teste/script_teste.gd" id="1_xuf33"]
